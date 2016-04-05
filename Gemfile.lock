@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/WebTheoryLLC/omniauth-twitch.git
+  revision: 19fe2104b8441df0926266a1d40834b9c3e82f59
+  specs:
+    omniauth-twitch (0.2.0)
+      omniauth-oauth2 (~> 1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -114,8 +121,6 @@ GEM
     omniauth-oauth2 (1.4.0)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
-    omniauth-twitch (0.1.2)
-      omniauth-oauth2 (~> 1.1)
     pg (0.18.4)
     pry (0.10.3)
       coderay (~> 1.1.0)
@@ -230,7 +235,7 @@ DEPENDENCIES
   figaro
   jbuilder (~> 2.0)
   jquery-rails
-  omniauth-twitch
+  omniauth-twitch!
   pg
   pry
   quiet_assets

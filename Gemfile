@@ -10,7 +10,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
 gem 'pg'
 gem 'faraday'
-gem 'omniauth-twitch'
+gem 'omniauth-twitch', git: 'git://github.com/WebTheoryLLC/omniauth-twitch.git'
 
 group :development, :test do
   gem 'pry'

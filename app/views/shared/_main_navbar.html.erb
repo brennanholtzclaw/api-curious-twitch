@@ -10,8 +10,8 @@
           <li><a href="<%= "#" %>" class="cart-link">
           <span class="glyphicon glyphicon-user"></span>My Account</a></li>
         <%# else %> -->
-          <li><a href="<%= "#" %>" class="cart-link">
-          <span class="glyphicon glyphicon-log-in"></span> Login with Twitch</a></li>
+          <li><%= link_to "Login with Twitch", twitch_login_path %>
+          <span class="glyphicon glyphicon-log-in"></span></a></li>
           <li><a href="<%= "#" %>" class="cart-link">
           <span class="glyphicon glyphicon-user"></span>Create Account</a></li>
           <li><a href="<%= "#" %>" class="category-link">Categories</a></li>
