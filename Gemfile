@@ -10,6 +10,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
 gem 'pg'
 gem 'faraday'
+gem 'omniauth-twitch'
 
 group :development, :test do
   gem 'pry'
