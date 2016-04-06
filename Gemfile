@@ -11,6 +11,7 @@ gem 'figaro'
 gem 'pg'
 gem 'faraday'
 gem 'omniauth-twitch', git: 'git://github.com/WebTheoryLLC/omniauth-twitch.git'
+gem 'httparty'
 
 group :development, :test do
   gem 'pry'
