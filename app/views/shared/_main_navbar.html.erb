@@ -4,18 +4,18 @@
       <a class="navbar-brand big-big-font" href="<%= root_path %>">TWITCH</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-        <!-- <%# if current_user %>
-          <li><a href="<%= "#" %>" data-method="delete" class="cart-link">
-          <span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        <% if current_user %>
+          <li><%= link_to "Logout", logout_path, method: :delete %>
+          <span class="glyphicon glyphicon-log-out"></span></li>
           <li><a href="<%= "#" %>" class="cart-link">
-          <span class="glyphicon glyphicon-user"></span>My Account</a></li>
-        <%# else %> -->
+          <span class="glyphicon glyphicon-user"></span><%= current_user.name.capitalize %>'s Account</a></li>
+        <% else %>
           <li><%= link_to "Login with Twitch", twitch_login_path %>
           <span class="glyphicon glyphicon-log-in"></span></a></li>
           <li><a href="<%= "#" %>" class="cart-link">
           <span class="glyphicon glyphicon-user"></span>Create Account</a></li>
           <li><a href="<%= "#" %>" class="category-link">Categories</a></li>
-        <%# end %>
+        <% end %>
     </ul>
   </div>
 </nav>
