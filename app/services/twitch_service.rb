@@ -32,7 +32,7 @@ class TwitchService
   end
 
   def post(path, params)
-    parse(HTTParty.post(@host + path + ".json?" + params.to_query, headers: @headers).body)
+    JSON.parse(HTTParty.post(@host + path + ".json?" + params.to_query, headers: @headers).body)
   end
 
   # def delete(path)

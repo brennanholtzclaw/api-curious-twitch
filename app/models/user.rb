@@ -20,4 +20,28 @@ class User < ActiveRecord::Base
       new_user.oauth_token        = auth_info.credentials.token
     end
   end
+
+  # def self.find_by(params)
+  #   service = TwitchService.new
+  #   service.users(params).map {|raw_info| User.new(raw_info)}
+  # end
+
+  def followed_streams
+    service = TwitchService.new
+    TwitchService.new.followed_by_user(self)
+  end
+
+  # def followed_streams
+  #   TwitchService.new.followed_by_user(self)
+  # end
+
+#   class Legislator < OpenStruct
+#   def self.find_by(params)
+#     service = SunlightService.new
+#     service.legislators(params).map {|raw_leg|
+#       Legislator.new(raw_leg)
+#     }
+#   end
+# end
+
 end
